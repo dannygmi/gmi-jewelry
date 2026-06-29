@@ -1,0 +1,110 @@
+/* GMI Jewelry — Apple-native token system. Light + Dark. iOS system colors + restrained gold accent. */
+
+/* ---------- DARK (default) ---------- */
+:root, [data-theme="dark"] {
+  color-scheme: dark;
+  --bg:           #000000;   /* grouped page background */
+  --surface:      #1C1C1E;   /* card / grouped cell */
+  --surface-2:    #2C2C2E;   /* elevated / pressed / fills */
+  --surface-el:   #2C2C2E;
+  --nav-bg:       rgba(20,20,22,0.72);  /* nav/tab material */
+
+  --label:        #FFFFFF;
+  --label-2:      rgba(235,235,245,0.62);
+  --label-3:      rgba(235,235,245,0.32);
+  --label-4:      rgba(235,235,245,0.18);
+  --text-hi: var(--label); --text-mid: var(--label-2); --text-lo: var(--label-3);
+
+  --separator:    rgba(84,84,88,0.60);
+  --separator-op: #38383A;   /* opaque separator */
+  --border: var(--separator);
+  --fill:         rgba(118,118,128,0.24);
+  --fill-2:       rgba(118,118,128,0.16);
+
+  --gold:         #E3BE5A;   /* accent on dark — bright, legible */
+  --gold-2:       #C8A24B;
+  --gold-deep:    #8A6C30;
+  --gold-tint:    rgba(227,190,90,0.16);
+
+  --up:           #32D74B;
+  --down:         #FF453A;
+  --debit:        #FF453A;   /* you owe */
+  --credit:       #0A84FF;   /* you're owed */
+  --on-gold:      #1A1407;
+
+  --shadow-card:  0 0 0 0 transparent;
+  --shadow-float: 0 12px 40px -8px rgba(0,0,0,0.6);
+  --glass-tint:   rgba(28,28,30,0.55);
+  --glass-blur:   30px;
+  --glass-border: rgba(255,255,255,0.10);
+}
+
+/* ---------- LIGHT ---------- */
+[data-theme="light"] {
+  color-scheme: light;
+  --bg:           #F2F2F7;   /* grouped page background */
+  --surface:      #FFFFFF;   /* card / grouped cell */
+  --surface-2:    #F2F2F7;
+  --surface-el:   #FFFFFF;
+  --nav-bg:       rgba(249,249,251,0.78);
+
+  --label:        #000000;
+  --label-2:      rgba(60,60,67,0.60);
+  --label-3:      rgba(60,60,67,0.30);
+  --label-4:      rgba(60,60,67,0.18);
+
+  --separator:    rgba(60,60,67,0.29);
+  --separator-op: #C6C6C8;
+  --fill:         rgba(118,118,128,0.12);
+  --fill-2:       rgba(118,118,128,0.08);
+
+  --gold:         #9A6F12;   /* accent text/icon on light — deep enough for contrast */
+  --gold-2:       #B8860B;
+  --gold-deep:    #7A5910;
+  --gold-tint:    rgba(184,134,11,0.12);
+
+  --up:           #248A3D;
+  --down:         #D70015;
+  --debit:        #D70015;
+  --credit:       #0066CC;
+  --on-gold:      #FFFFFF;
+
+  --shadow-card:  0 1px 2px rgba(0,0,0,0.05);
+  --shadow-float: 0 12px 40px -8px rgba(0,0,0,0.18);
+  --glass-tint:   rgba(249,249,251,0.62);
+  --glass-blur:   30px;
+  --glass-border: rgba(0,0,0,0.06);
+}
+
+/* auto = follow system when no explicit theme set */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]):not([data-theme="light"]) {
+    color-scheme: light;
+    --bg:#F2F2F7; --surface:#FFFFFF; --surface-2:#F2F2F7; --surface-el:#FFFFFF; --nav-bg:rgba(249,249,251,0.78);
+    --label:#000000; --label-2:rgba(60,60,67,0.60); --label-3:rgba(60,60,67,0.30); --label-4:rgba(60,60,67,0.18);
+    --text-hi:#000000; --text-mid:rgba(60,60,67,0.60); --text-lo:rgba(60,60,67,0.30);
+    --separator:rgba(60,60,67,0.29); --separator-op:#C6C6C8; --fill:rgba(118,118,128,0.12); --fill-2:rgba(118,118,128,0.08);
+    --gold:#9A6F12; --gold-2:#B8860B; --gold-deep:#7A5910; --gold-tint:rgba(184,134,11,0.12);
+    --up:#248A3D; --down:#D70015; --debit:#D70015; --credit:#0066CC; --on-gold:#FFFFFF;
+    --shadow-card:0 1px 2px rgba(0,0,0,0.05); --shadow-float:0 12px 40px -8px rgba(0,0,0,0.18);
+    --glass-tint:rgba(249,249,251,0.62); --glass-border:rgba(0,0,0,0.06);
+  }
+}
+
+:root {
+  /* spacing (8pt) */
+  --s1:4px; --s2:8px; --s3:12px; --s4:16px; --s5:20px; --s6:24px; --s8:32px; --s10:40px; --s12:48px;
+  /* radii (iOS) */
+  --r-card:12px; --r-cell:10px; --r-sheet:14px; --r-chip:980px; --r-btn:14px; --r-seg:9px;
+  /* motion */
+  --ease: cubic-bezier(.32,.72,0,1);
+  --dur: 320ms;
+  /* layout */
+  --maxw: 440px; --tabbar-h: 84px; --gutter: 16px;
+}
+
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { margin:0; padding:0; background: var(--bg); color: var(--label); transition: background .3s var(--ease), color .3s var(--ease); }
+body { overscroll-behavior: none; }
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce){ * { animation-duration:.001ms !important; transition-duration:.001ms !important; } }

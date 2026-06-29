@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1" />
+<title>GMI Jewelry — بازار طلا</title>
+<meta name="description" content="GMI Jewelry — بازار طلای لحظه‌ای؛ خرید و فروش طلا و سکه به‌صورت آنی." />
+
+<!-- install / standalone -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="GMI" />
+<meta name="theme-color" content="#0C0B0A" media="(prefers-color-scheme: dark)" />
+<meta name="theme-color" content="#F2F2F7" media="(prefers-color-scheme: light)" />
+<link rel="apple-touch-icon" href="assets/icon-180.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+<link rel="manifest" href="manifest.json" />
+
+<!-- WhatsApp / social preview -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="GMI Jewelry" />
+<meta property="og:title" content="GMI Jewelry — بازار طلا" />
+<meta property="og:description" content="نسخه اولیه اپلیکیشن GMI: بازار طلای لحظه‌ای، خرید و فروش طلا و سکه." />
+<meta property="og:url" content="https://dannygmi.github.io/gmi-jewelry/" />
+<meta property="og:image" content="https://dannygmi.github.io/gmi-jewelry/assets/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="GMI Jewelry — بازار طلا" />
+<meta name="twitter:image" content="https://dannygmi.github.io/gmi-jewelry/assets/og-image.png" />
+
+<link rel="stylesheet" href="assets/fonts.css" />
+<link rel="stylesheet" href="assets/tokens.css" />
+<link rel="stylesheet" href="assets/app.css" />
+<style>
+  .iconbtn .ic-sun{display:none}
+  [data-theme="dark"] .iconbtn .ic-sun{display:block}
+  [data-theme="dark"] .iconbtn .ic-moon{display:none}
+  [data-theme="light"] .iconbtn .ic-moon{display:block}
+  [data-theme="light"] .iconbtn .ic-sun{display:none}
+</style>
+</head>
+<body>
+<div class="phone" data-view="onboarding">
+
+  <!-- SPLASH -->
+  <div class="splash" id="splash">
+    <img src="assets/brand/gmi-lockup.png" alt="GMI Jewelry" />
+    <div class="tag">T E H R A N · G O L D</div>
+  </div>
+
+  <!-- ONBOARDING -->
+  <section class="onb" data-onb>
+    <img class="logo" src="assets/brand/gmi-lockup.png" alt="GMI Jewelry" />
+    <h1>به GMI خوش آمدید</h1>
+    <p>بازار طلای لحظه‌ای، خرید و فروش امن. شماره موبایل خود را وارد کنید.</p>
+    <div class="phone-field"><span class="cc">+۹۸</span><input inputmode="numeric" value="۰۹۱۹ ۷۲۶ ۶۹۹۳" aria-label="شماره موبایل" /></div>
+    <div class="otp">
+      <input data-otp inputmode="numeric" maxlength="1" value="۴" />
+      <input data-otp inputmode="numeric" maxlength="1" value="۸" />
+      <input data-otp inputmode="numeric" maxlength="1" value="۲" />
+      <input data-otp inputmode="numeric" maxlength="1" placeholder="·" />
+    </div>
+    <div class="foot">
+      <button class="btn btn-gold" data-enter>ورود به بازار</button>
+      <p style="font-size:12px;margin-top:14px;color:var(--label-3)">با ورود، شرایط استفاده را می‌پذیرید</p>
+    </div>
+  </section>
+
+  <!-- NAV BAR (persistent) -->
+  <div class="navbar" data-appchrome>
+    <div class="brand"><img src="assets/brand/gmi-mark.png" alt="GMI" /></div>
+    <div class="inline-title" data-inline-title>بازار</div>
+    <button class="iconbtn" data-theme-toggle aria-label="تغییر تم">
+      <svg class="ic-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5 19 19M19 5l-1.5 1.5M6.5 17.5 5 19"/></svg>
+      <svg class="ic-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+  </div>
+
+  <main class="app-scroll" data-appchrome>
+
+    <!-- ===== بازار / MARKET ===== -->
+    <section data-screen="market" class="active" data-title="بازار">
+      <div class="large"><h1>بازار</h1><div class="sub"><span class="live-dot"></span>بازار باز است · شنبه ۶ تیر</div></div>
+
+      <div class="rail">
+        <div class="spot"><div class="k">طلای ۱۸</div><div class="v num">۴٬۱۸۲٬۰۰۰</div><div class="d up num">+۰٫۸۴٪</div></div>
+        <div class="spot"><div class="k">سکه امامی</div><div class="v num">۴۸٬۶۵۰٬۰۰۰</div><div class="d up num">+۱٫۱۲٪</div></div>
+        <div class="spot"><div class="k">مظنه آبشده</div><div class="v num">۲۳٬۰۱۸٬۰۰۰</div><div class="d up num">+۰٫۷۹٪</div></div>
+        <div class="spot"><div class="k">دلار</div><div class="v num">۸۹٬۴۰۰</div><div class="d down num">−۰٫۱۱٪</div></div>
+        <div class="spot"><div class="k">اونس جهانی</div><div class="v num">۳٬۳۹۸ $</div><div class="d up num">+۰٫۳۲٪</div></div>
+      </div>
+
+      <div class="ghead">آبشده</div>
+      <div class="group">
+        <div class="row" data-open="product" data-product="naqdi1">
+          <div class="lead"><b>نقدی یک</b><span>هر گرم ۷۵۰</span></div>
+          <canvas class="rsp mid" data-spark="naqdi1"></canvas>
+          <div class="trail"><span class="val num" data-pricecell>۴٬۱۸۲٬۰۰۰</span><span class="pill up num">+۰٫۸۴٪</span></div>
+        </div>
+        <div class="row" data-open="product" data-product="naqdi2">
+          <div class="lead"><b>نقدی ۲</b><span>تحویل ۷ تیر</span></div>
+          <canvas class="rsp mid" data-spark="naqdi2"></canvas>
+          <div class="trail"><span class="val num" data-pricecell>۴٬۱۸۰٬۵۰۰</span><span class="pill up num">+۰٫۷۹٪</span></div>
+        </div>
+      </div>
+
+      <div class="ghead">سکه</div>
+      <div class="group">
+        <div class="row" data-open="product" data-product="emami">
+          <div class="lead"><b>امامی جدید</b><span>طرح جدید</span></div>
+          <canvas class="rsp mid" data-spark="emami"></canvas>
+          <div class="trail"><span class="val num" data-pricecell>۴۸٬۶۵۰٬۰۰۰</span><span class="pill up num">+۱٫۱۲٪</span></div>
+        </div>
+        <div class="row" data-open="product" data-product="tamam">
+          <div class="lead"><b>تمام قدیم</b><span>طرح قدیم</span></div>
+          <canvas class="rsp mid" data-spark="tamam"></canvas>
+          <div class="trail"><span class="val num" data-pricecell>۴۷٬۸۰۰٬۰۰۰</span><span class="pill up num">+۰٫۴۱٪</span></div>
+        </div>
+        <div class="row" data-open="product" data-product="nim">
+          <div class="lead"><b>نیم جدید</b><span>طرح جدید</span></div>
+          <canvas class="rsp mid" data-spark="nim"></canvas>
+          <div class="trail"><span class="val num" data-pricecell>۲۵٬۲۰۰٬۰۰۰</span><span class="pill down num">−۰٫۲۲٪</span></div>
+        </div>
+        <div class="row" data-open="product" data-product="rob">
+          <div class="lead"><b>ربع جدید</b><span>طرح جدید</span></div>
+          <canvas class="rsp mid" data-spark="rob"></canvas>
+          <div class="trail"><span class="val num" data-pricecell>۱۵٬۸۰۰٬۰۰۰</span><span class="pill down num">−۰٫۳۵٪</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== سفارش / ORDERS ===== -->
+    <section data-screen="orders" data-title="سفارش‌ها">
+      <div class="large"><h1>سفارش‌ها</h1></div>
+      <div class="filterbar"><div class="seg"><button aria-selected="true">امروز</button><button>۷ روز</button><button>۳۰ روز</button></div></div>
+      <div class="group">
+        <div class="row"><div class="lead"><b>خرید · نقدی یک</b><span>۵ گرم · ۱۴:۰۲ · #۱۱۳</span></div>
+          <div class="trail"><span class="val num">۲۰٬۹۱۰٬۰۰۰</span><span class="st done">انجام شد</span></div></div>
+        <div class="row"><div class="lead"><b>فروش · ربع جدید</b><span>۲ عدد · ۱۳:۴۱ · #۱۱۲</span></div>
+          <div class="trail"><span class="val num">۳۱٬۳۰۰٬۰۰۰</span><span class="st done">انجام شد</span></div></div>
+        <div class="row"><div class="lead"><b>خرید · امامی جدید</b><span>۱ عدد · دیروز ۱۸:۲۰ · #۱۱۱</span></div>
+          <div class="trail"><span class="val num">۴۸٬۶۵۰٬۰۰۰</span><span class="st rejected">رد قیمت</span></div></div>
+      </div>
+    </section>
+
+    <!-- ===== گردش / TRANSACTIONS ===== -->
+    <section data-screen="transactions" data-title="گردش حساب">
+      <div class="large"><h1>گردش حساب</h1></div>
+      <div class="ghead">یکشنبه ۳۱ خرداد</div>
+      <div class="group">
+        <div class="lrow2"><span class="licon debit"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg></span>
+          <div class="li"><b>پرداخت · سکه امامی</b><span>۱ عدد · سند ۴۹۳۹۱</span></div>
+          <div class="la"><div class="amt debit num">−۴۸٬۶۵۰٬۰۰۰</div><div class="u">ریال</div></div></div>
+        <div class="lrow2"><span class="licon debit"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg></span>
+          <div class="li"><b>خرید · نقدی یک</b><span>۵۰ گرم · فی ۴٬۱۸۲٬۰۰۰</span></div>
+          <div class="la"><div class="amt debit num">−۲۰۹٬۱۰۰٬۰۰۰</div><div class="u">ریال</div></div></div>
+      </div>
+      <div class="ghead">چهارشنبه ۲۷ خرداد</div>
+      <div class="group">
+        <div class="lrow2"><span class="licon credit"><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></span>
+          <div class="li"><b>فروش · پولی کردن امامی</b><span>سند ۴۹۳۹۱</span></div>
+          <div class="la"><div class="amt credit num">+۱٬۵۷۵٬۰۰۰٬۰۰۰</div><div class="u">ریال</div></div></div>
+        <div class="lrow2"><span class="licon credit"><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></span>
+          <div class="li"><b>دریافت · تسویه نقدی</b><span>سند ۴۹۳۱۲</span></div>
+          <div class="la"><div class="amt credit num">+۸۲۰٬۰۰۰٬۰۰۰</div><div class="u">ریال</div></div></div>
+      </div>
+    </section>
+
+    <!-- ===== مانده / BALANCE ===== -->
+    <section data-screen="balance" data-title="مانده">
+      <div class="large"><h1>مانده</h1></div>
+      <div class="gold-card">
+        <img class="gc-seal" src="assets/brand/gmi-mark.png" alt="" />
+        <div class="gc-k">موجودی طلا</div>
+        <div class="gc-big"><span class="num ltr">۱۵۲٫۳۰۰</span> <span class="u">گرم</span></div>
+        <div class="gc-sub"><span class="ltr">▲ ۱٫۰۶٪</span> امروز · <span class="num ltr">+۶٬۹۴۰٬۰۰۰</span> تومان</div>
+        <canvas class="gc-area" data-area="gold"></canvas>
+      </div>
+      <div class="quick">
+        <button class="qa" data-open="product" data-product="naqdi1"><span class="c"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>خرید</button>
+        <button class="qa"><span class="c"><svg viewBox="0 0 24 24"><path d="M7 7h13l-3-3M17 17H4l3 3"/></svg></span>تبدیل</button>
+        <button class="qa"><span class="c"><svg viewBox="0 0 24 24"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></span>انتقال</button>
+        <button class="qa" data-go="transactions"><span class="c"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 10h8M8 14h5"/></svg></span>گردش</button>
+      </div>
+      <div class="ghead">دارایی‌ها</div>
+      <div class="group">
+        <div class="row"><div class="lead"><b>طلا</b><span>۱۵۲٫۳۰۰ گرم</span></div>
+          <div class="trail"><span class="val num">۶۳۶٬۹۱۸٬۶۰۰</span><span class="val-sub">ارزش روز · تومان</span></div></div>
+        <div class="row"><div class="lead"><b>ریال</b><span>موجودی نقدی</span></div>
+          <div class="trail"><span class="val num">۲٬۸۴۷٬۵۰۰٬۰۰۰</span><span class="val-sub">تومان</span></div></div>
+      </div>
+      <div class="ghead">امروز</div>
+      <div class="group">
+        <div class="row"><div class="lead"><b>اسپرد ثبت‌شده</b><span>سود معاملات امروز</span></div>
+          <div class="trail"><span class="val num ltr" style="color:var(--up)">+۱٬۲۴۰٬۰۰۰</span><span class="val-sub">تومان</span></div></div>
+        <div class="row"><div class="lead"><b>ارزش کل پرتفوی</b><span>طلا + ریال</span></div>
+          <div class="trail"><span class="val num">۳٬۴۸۴٬۴۱۸٬۶۰۰</span><span class="val-sub">تومان</span></div></div>
+      </div>
+    </section>
+
+    <!-- ===== چت / CHAT ===== -->
+    <section data-screen="chat" data-title="گفتگو">
+      <div class="large"><h1>گفتگو</h1></div>
+      <div class="chat-sections">
+        <button class="active">مالی</button><button>حسابداری</button><button>سفارش</button><button>بنکداری تهران</button><button>عمومی</button>
+      </div>
+      <div class="chat-list" data-chat-list>
+        <div class="bubble them"><div class="bubble-text">سلام، خدمت شما. بفرمایید.</div><div class="bubble-meta">۱۰:۱۲ · پشتیبانی</div></div>
+        <div class="bubble me"><div class="bubble-text">سلام خسته نباشید</div><div class="bubble-meta">۱۰:۱۳</div></div>
+        <div class="bubble me"><div class="bubble-text">لطفاً پرینت حساب وزنی از اول سال ارسال بفرمایید</div><div class="bubble-meta">۱۰:۱۳</div></div>
+        <div class="bubble them"><div class="attach"><div class="ic">PDF</div><div><div style="font-size:14px;font-weight:600">TRIMsC.pdf</div><div style="font-size:12px;color:var(--label-2)">۲٫۳ مگابایت</div></div></div><div class="bubble-meta">۱۲:۱۲ · حسابداری</div></div>
+        <div class="bubble them"><div class="bubble-text">فرستادم خدمتتان. در خدمتیم.</div><div class="bubble-meta">۱۲:۱۳ · حسابداری</div></div>
+      </div>
+      <form class="composer" data-chat-form>
+        <input data-chat-input placeholder="پیام بنویسید…" aria-label="پیام" />
+        <button class="send" type="submit" aria-label="ارسال"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- TAB BAR -->
+  <nav class="tabbar" data-appchrome>
+    <button class="tab active" data-tab="market"><svg viewBox="0 0 24 24"><path d="M4 19V5M9 19V11M14 19v-6M19 19V8"/></svg><span>بازار</span></button>
+    <button class="tab" data-tab="orders"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2.5"/><path d="M9 8h6M9 12h6M9 16h4"/></svg><span>سفارش</span></button>
+    <button class="tab" data-tab="transactions"><svg viewBox="0 0 24 24"><path d="M7 7h13l-3-3M17 17H4l3 3"/></svg><span>گردش</span></button>
+    <button class="tab" data-tab="balance"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2.5"/><path d="M3 10.5h18M16 14h2.5"/></svg><span>مانده</span></button>
+    <button class="tab" data-tab="chat"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H8l-4 4V5a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2z"/></svg><span>چت</span></button>
+  </nav>
+
+  <!-- PRODUCT SHEET -->
+  <div data-sheet="product">
+    <div class="scrim"></div>
+    <div class="sheet-card">
+      <div class="grabber"></div>
+      <div class="sheet-pad">
+        <div class="sheet-head">
+          <div><div class="t" data-pf="name">نقدی یک</div><div class="s" data-pf="sub">هر گرم ۷۵۰</div></div>
+          <button class="xbtn" data-close aria-label="بستن">✕</button>
+        </div>
+        <div class="detail-price"><span class="p num" data-pf="buy">۴٬۱۸۲٬۰۰۰</span><span class="delta up num" data-pf="change">+۰٫۸۴٪</span></div>
+        <div class="chartwrap"><canvas data-chart="candles"></canvas></div>
+        <div class="seg" style="margin:6px 0 16px"><button aria-selected="true">۱ روز</button><button>۱ هفته</button><button>۱ ماه</button><button>۱ سال</button></div>
+
+        <div class="group" style="margin-inline:0">
+          <div class="lrow"><span class="l">فروش</span><span class="v num" data-pf="sell">۴٬۱۶۵٬۰۰۰</span></div>
+          <div class="lrow"><span class="l">اسپرد</span><span class="v num" data-pf="spread">۱۷٬۰۰۰</span></div>
+          <div class="lrow"><span class="l">مظنه</span><span class="v num" data-pf="premium">+۱٫۲۰٪</span></div>
+        </div>
+
+        <div class="seg seg--buy" style="margin-top:16px">
+          <button data-side="buy" aria-selected="true">خرید</button>
+          <button data-side="sell" aria-selected="false">فروش</button>
+        </div>
+
+        <div class="group" style="margin-inline:0;margin-top:12px">
+          <div class="field"><span class="fl">مقدار (<span data-conv="unit">گرم</span>)</span>
+            <input data-conv="gram" inputmode="decimal" placeholder="۵" />
+            <div class="stepper"><button data-step="down">−</button><button data-step="up">+</button></div></div>
+          <div class="lrow"><span class="l">مبلغ کل</span><span class="v num" data-conv="total">۰ تومان</span></div>
+        </div>
+        <div class="gfoot" data-conv="minmax">از ۱ تا ۲۰۰۰ گرم</div>
+
+        <button class="btn btn-gold" data-confirm-open style="margin-top:16px">ادامه</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONFIRM / QUOTE-LOCK -->
+  <div data-sheet="confirm">
+    <div class="scrim"></div>
+    <div class="lock-card">
+      <div class="grabber"></div>
+      <div class="lock-inner">
+        <div data-confirmbody>
+          <img class="seal" src="assets/brand/gmi-mark.png" alt="" />
+          <div class="lock-dir"><b data-cf="side">خرید</b> · <span data-cf="name">نقدی یک</span></div>
+          <div class="lock-price"><span class="num" data-cf="totalbig">۲۰٬۹۱۰٬۰۰۰</span> <span class="cur">تومان</span></div>
+
+          <div class="lock-rows">
+            <div class="lrow"><span class="l">مقدار</span><span class="v num" data-cf="qty">۵ گرم</span></div>
+            <div class="lrow"><span class="l">فی واحد</span><span class="v num" data-cf="price">۴٬۱۸۲٬۰۰۰</span></div>
+            <div class="lrow"><span class="l">اسپرد</span><span class="v num" data-cf="spread">۱۷٬۰۰۰</span></div>
+          </div>
+
+          <div class="lock-ring">
+            <svg width="108" height="108" viewBox="0 0 108 108"><circle class="track" cx="54" cy="54" r="48"></circle><circle class="prog" id="cdRing" cx="54" cy="54" r="48"></circle></svg>
+            <div class="cd"><b id="cdNum">۳۰</b><span>ثانیه</span></div>
+          </div>
+
+          <div class="irrev" data-cf="state">قیمت برای شما قفل شده است. پس از تأیید، <b>معامله قابل لغو نیست.</b></div>
+          <button class="btn btn-gold hold" data-holdbtn><span class="fill" data-holdfill></span><span>نگه دارید تا تأیید شود</span></button>
+          <div class="hold-hint">برای امنیت، دکمه را لمس کرده و نگه دارید</div>
+          <button class="btn btn-text" data-close style="margin-top:6px">انصراف</button>
+        </div>
+        <div class="lock-result" data-result>
+          <div class="ok">✓</div>
+          <div style="font-size:22px;font-weight:700">سفارش ثبت شد</div>
+          <p style="color:var(--label-2);font-size:15px;margin:8px 0 0">قیمت قفل شد و سفارش برای دلال ارسال شد.</p>
+          <button class="btn btn-gold" data-go="market" style="margin-top:24px">بازگشت به بازار</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="assets/data.js"></script>
+<script src="assets/charts.js"></script>
+<script src="assets/app.js"></script>
+<script>
+  (function(){
+    var root=document.documentElement, phone=document.querySelector('.phone'), splash=document.getElementById('splash');
+    if(!root.dataset.theme) root.dataset.theme = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    setTimeout(function(){ if(splash){ splash.style.transition='opacity .5s'; splash.style.opacity='0'; setTimeout(function(){ splash.style.display='none'; },520);} }, 1400);
+    var enter=document.querySelector('[data-enter]');
+    if(enter) enter.addEventListener('click', function(){ phone.setAttribute('data-view','app'); if(window.APP) window.APP.showScreen('market'); });
+  })();
+</script>
+</body>
+</html>
